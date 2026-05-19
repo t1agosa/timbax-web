@@ -74,14 +74,29 @@
             font-size: 13px;
         }
         .back-link {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
             margin-bottom: 24px;
             color: #2979FF;
             text-decoration: none;
             font-weight: 600;
             font-size: 15px;
+            transition: opacity 0.2s ease;
+            -webkit-tap-highlight-color: transparent;
         }
-        .back-link:hover { text-decoration: underline; }
+        
+        .back-link:hover {
+            opacity: 0.7;
+        }
+        
+        .back-icon {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+        }
+
+        
         a { color: #2979FF; }
         @media (max-width: 768px) {
             .container { padding: 24px; }
@@ -94,7 +109,12 @@
 </head>
 <body>
     <div class="container">
-        <a href="https://timbax.com" class="back-link">← Volver a Timbax</a>
+        <a href="/" class="back-link">
+            <svg class="back-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15 18l-6-6 6-6"/>
+            </svg>
+            Volver a Timbax
+        </a>
         <header>
             <div class="logo">TIMBAX</div>
             <h1>Términos y Condiciones</h1>
