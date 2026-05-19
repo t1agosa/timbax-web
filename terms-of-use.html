@@ -26,11 +26,22 @@
             padding-bottom: 24px;
             border-bottom: 1px solid #E5E5EA;
         }
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+        
+        .logo-image {
+            width: 40px;
+            height: auto;
+        }
+        
         .logo {
             font-size: 32px;
             font-weight: 900;
             color: #272727;
-            margin-bottom: 16px;
         }
         h1 {
             font-size: 28px;
@@ -100,6 +111,7 @@
         a { color: #2979FF; }
         @media (max-width: 768px) {
             .container { padding: 24px; }
+            .logo-image { width: 32px; }
             h1 { font-size: 24px; }
             h2 { font-size: 20px; }
             h3 { font-size: 16px; }
@@ -116,8 +128,11 @@
             Volver a Timbax
         </a>
         <header>
-            <div class="logo">TIMBAX</div>
-            <h1>Términos y Condiciones</h1>
+            <div class="logo-container">
+                <img src="/timbax_logo.png" alt="Timbax Logo" class="logo-image">
+                <div class="logo">TIMBAX</div>
+            </div>
+            <h1>Política de Privacidad</h1>
             <p class="last-updated">Vigente desde: 1 de enero de 2026</p>
         </header>
  
