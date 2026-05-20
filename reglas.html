@@ -4,8 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reglamentos - Timbax</title>
+ 
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+ 
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
  
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -28,7 +38,7 @@
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            margin-bottom: 32px;
+            margin-bottom: 24px;
             color: #2979FF;
             text-decoration: none;
             font-weight: 600;
@@ -39,8 +49,8 @@
         .back-link:hover { opacity: 0.7; }
         .back-icon { width: 20px; height: 20px; flex-shrink: 0; }
  
-        header { 
-            margin-bottom: 40px; 
+        header {
+            margin-bottom: 40px;
             padding-bottom: 24px;
             border-bottom: 1px solid #E5E5EA;
         }
@@ -49,7 +59,7 @@
             display: flex;
             align-items: center;
             gap: 12px;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
         }
         .logo-image { width: 40px; height: auto; }
         .logo { font-size: 32px; font-weight: 900; color: #272727; }
@@ -68,24 +78,17 @@
         }
  
         h1 {
-            font-size: 30px;
-            font-weight: 800;
+            font-size: 28px;
+            font-weight: 700;
             color: #272727;
-            margin-bottom: 12px;
-            line-height: 1.2;
+            margin-bottom: 8px;
         }
  
         .intro {
             font-size: 16px;
-            color: #636366;
-            line-height: 1.7;
-            max-width: 560px;
-        }
- 
-        .divider {
-            border: none;
-            border-top: 1px solid #E5E5EA;
-            margin: 36px 0;
+            color: #272727;
+            line-height: 1.6;
+            margin-bottom: 0;
         }
  
         .games-label {
@@ -141,7 +144,6 @@
             display: block;
         }
  
-        .game-link-text {}
         .game-name {
             font-size: 18px;
             font-weight: 700;
@@ -157,26 +159,18 @@
         }
  
         .info-box {
-            margin-top: 40px;
+            margin-top: 32px;
             background: #F2F2F7;
-            border-radius: 10px;
-            padding: 20px 24px;
-            display: flex;
-            gap: 16px;
-            align-items: flex-start;
-        }
-        .info-icon {
-            font-size: 22px;
-            flex-shrink: 0;
-            margin-top: 1px;
+            border-radius: 8px;
+            padding: 20px;
         }
         .info-text {
-            font-size: 14px;
-            color: #636366;
+            font-size: 16px;
+            color: #272727;
             line-height: 1.6;
+            margin-bottom: 0;
         }
         .info-text strong {
-            color: #272727;
             font-weight: 600;
         }
  
@@ -195,7 +189,7 @@
             .logo-image { width: 32px; }
             h1 { font-size: 24px; }
             .game-link { padding: 14px 16px; }
-            .game-icon { width: 40px; height: 40px; font-size: 18px; }
+            .game-icon { width: 40px; height: 40px; }
         }
     </style>
 </head>
@@ -222,15 +216,13 @@
             </p>
         </header>
  
-        <hr class="divider">
- 
         <p class="games-label">Elegí un juego</p>
  
         <div class="game-list">
  
             <a href="/reglas/truco" class="game-link">
                 <div class="game-link-left">
-                    <div class="game-icon"><img src="/assets/truco.webp" alt="Truco"></div>
+                    <div class="game-icon"><img src="/truco.webp" alt="Truco"></div>
                     <span class="game-name">Truco</span>
                 </div>
                 <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -240,7 +232,7 @@
  
             <a href="/reglas/mosca" class="game-link">
                 <div class="game-link-left">
-                    <div class="game-icon"><img src="/assets/mosca.webp" alt="Mosca"></div>
+                    <div class="game-icon"><img src="/mosca.webp" alt="Mosca"></div>
                     <span class="game-name">Mosca</span>
                 </div>
                 <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -250,7 +242,7 @@
  
             <a href="/reglas/chinchon" class="game-link">
                 <div class="game-link-left">
-                    <div class="game-icon"><img src="/assets/chinchon.webp" alt="Chinchón"></div>
+                    <div class="game-icon"><img src="/chinchon.webp" alt="Chinchón"></div>
                     <span class="game-name">Chinchón</span>
                 </div>
                 <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -260,7 +252,7 @@
  
             <a href="/reglas/generala" class="game-link">
                 <div class="game-link-left">
-                    <div class="game-icon"><img src="/assets/generala.webp" alt="Generala"></div>
+                    <div class="game-icon"><img src="/generala.webp" alt="Generala"></div>
                     <span class="game-name">Generala</span>
                 </div>
                 <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -271,7 +263,6 @@
         </div>
  
         <div class="info-box">
-            <span class="info-icon">💡</span>
             <p class="info-text">
                 <strong>¿Estás jugando ahora?</strong> En la app Timbax encontrás un resumen rápido de las reglas desde la pantalla de cada juego, sin salir de la partida.
             </p>
