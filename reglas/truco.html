@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reglas del Truco - Timbax</title>
+    <link rel="stylesheet" href="/assets/css/timbax.css">
+    <style>
+        .header-tag {
+            display: inline-block;
+            background: #F2F2F7;
+            color: #8E8E93;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 6px;
+            margin-bottom: 12px;
+        }
+
+        .game-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 22%;
+            overflow: hidden;
+            flex-shrink: 0;
+            margin-bottom: 16px;
+        }
+        .game-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .section-card {
+            border: 1px solid #E5E5EA;
+            border-radius: 10px;
+            padding: 24px;
+            margin-bottom: 16px;
+        }
+
+        .section-card h2 {
+            margin-top: 0;
+            margin-bottom: 16px;
+            font-size: 18px;
+        }
+
+        .section-card h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .section-card p:last-child,
+        .section-card ul:last-child {
+            margin-bottom: 0;
+        }
+
+        .highlight {
+            background: #F2F2F7;
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin-bottom: 16px;
+        }
+        .highlight p { margin-bottom: 8px; }
+        .highlight p:last-child { margin-bottom: 0; }
+
+        .back-to-rules {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 13px;
+            color: #8E8E93;
+            text-decoration: none;
+            margin-bottom: 8px;
+            transition: opacity 0.2s ease;
+        }
+        .back-to-rules:hover { opacity: 0.7; }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <a href="/reglas" class="back-to-rules">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15 18l-6-6 6-6"/>
+            </svg>
+            Reglamentos
+        </a>
+
+        <a href="/" class="back-link">
+            <svg class="back-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15 18l-6-6 6-6"/>
+            </svg>
+            Volver a Timbax
+        </a>
+
+        <header>
+            <div class="logo-container">
+                <img src="/timbax_logo.png" alt="Timbax Logo" class="logo-image">
+                <div class="logo">TIMBAX</div>
+            </div>
+            <div class="game-icon">
+                <img src="/assets/images/truco.webp" alt="Truco">
+            </div>
+            <div class="header-tag">Reglamentos</div>
+            <h1>Reglas del Truco</h1>
+            <p class="text-muted">2, 4 o 6 jugadores · Baraja española de 40 cartas</p>
+        </header>
+
+        <!-- INTRODUCCIÓN Y ORIGEN -->
+        <div class="section-card">
+            <h2>Introducción y Origen</h2>
+            <p>El Truco es un juego de cartas con raíces árabes del siglo XV que llegó a Argentina a través de España.</p>
+            <h3>Origen histórico</h3>
+            <p>El juego proviene del árabe "truk" o "truch" (que significa "engaño" o "artimaña"). Los moros lo llevaron a España, donde se asentó en Valencia y Baleares como "Truc Valencià".</p>
+            <h3>Llegada a Argentina</h3>
+            <p>El Truco cruzó el Atlántico con los colonizadores españoles y se arraigó en las pulperías y el campo argentino. A diferencia de otros juegos de salón, el Truco impactó fuerte en el pueblo: gauchos, paisanos y trabajadores rurales.</p>
+            <h3>Adaptación argentina</h3>
+            <p>Al no requerir dinero obligatorio y basarse en la charla, la mentira y el ingenio rápido, encajó perfecto con la idiosincrasia criolla. Se convirtió en un duelo de viveza más que de azar.</p>
+            <p>El Truco argentino fusionó el "Truc" español (combate de cartas) con la "Flor" (puntos del mismo palo), aunque hoy se juega mayormente sin Flor.</p>
+        </div>
+
+        <!-- CONTEXTO Y OBJETIVO -->
+        <div class="section-card">
+            <h2>Contexto y Objetivo</h2>
+            <div class="highlight">
+                <p>No existe un reglamento único universal. Existen reglas ampliamente aceptadas y organizaciones como la <strong>ASART</strong> (Asociación Argentina de Truco) que unifican criterios para torneos.</p>
+                <p>Este reglamento se basa en las reglas más comunes del Truco Argentino. Antes de comenzar, se recomienda acordar variantes locales.</p>
+            </div>
+            <h3>Modalidades</h3>
+            <ul>
+                <li><strong>2 jugadores:</strong> mano a mano (1 vs 1)</li>
+                <li><strong>4 jugadores:</strong> equipos de 2 vs 2 (más frecuente)</li>
+                <li><strong>6 jugadores:</strong> equipos de 3 vs 3</li>
+            </ul>
+            <h3>Baraja</h3>
+            <p>Española de 40 cartas (se retiran 8, 9 y comodines).</p>
+            <h3>Objetivo</h3>
+            <p>Llegar a <strong>30 puntos</strong> (15 malas + 15 buenas) o <strong>18 puntos</strong> (9 malas + 9 buenas). El primero en llegar al objetivo gana el partido. En torneos se suele jugar al mejor de 3 partidos.</p>
+        </div>
+
+        <!-- VALORES DE LAS CARTAS -->
+        <div class="section-card">
+            <h2>Valores de las Cartas</h2>
+            <p>Jerarquía de las cartas, de mayor a menor:</p>
+            <ul>
+                <li><strong>1 de Espada</strong> — "El Macho" o "Ancho de Espada"</li>
+                <li><strong>1 de Basto</strong> — "La Hembra" o "Ancho de Basto"</li>
+                <li><strong>7 de Espada</strong></li>
+                <li><strong>7 de Oro</strong></li>
+                <li><strong>3</strong> — de cualquier palo</li>
+                <li><strong>2</strong> — de cualquier palo</li>
+                <li><strong>1 de Copa y 1 de Oro</strong> — "Ancho falso"</li>
+                <li><strong>12</strong> — "El Rey" de cualquier palo</li>
+                <li><strong>11</strong> — "El Caballo" de cualquier palo</li>
+                <li><strong>10</strong> — "La Sota" de cualquier palo</li>
+                <li><strong>7 de Copa y 7 de Basto</strong> — "Siete falso"</li>
+                <li><strong>6, 5 y 4</strong> — "El descarte" de cualquier palo, en ese orden</li>
+            </ul>
+        </div>
+
+        <!-- SEÑAS -->
+        <div class="section-card">
+            <h2>Señas de las Cartas</h2>
+            <p>El objetivo es comunicarle a tu compañero qué cartas tenés sin que los rivales se den cuenta.</p>
+            <h3>Señas de cartas altas</h3>
+            <ul>
+                <li><strong>El Macho (1 de Espada):</strong> levantar ambas cejas</li>
+                <li><strong>La Hembra (1 de Basto):</strong> guiñar un ojo</li>
+                <li><strong>7 de Espada:</strong> mover la comisura de los labios hacia la derecha</li>
+                <li><strong>7 de Oro:</strong> mover la comisura de los labios hacia la izquierda</li>
+                <li><strong>3:</strong> morderse el labio inferior suavemente</li>
+                <li><strong>2:</strong> fruncir los labios (hacer piquito)</li>
+                <li><strong>Ancho falso (1 de Copa/Oro):</strong> abrir la boca ligeramente</li>
+            </ul>
+            <h3>Señas de puntos para el Envido y Truco</h3>
+            <ul>
+                <li><strong>Tengo muchos puntos (30+):</strong> arrugar o fruncir la nariz</li>
+                <li><strong>Las Viejas (27 puntos):</strong> seña específica según acuerdo</li>
+                <li><strong>Las Perdedoras (29 puntos):</strong> seña específica según acuerdo</li>
+                <li><strong>No tengo nada:</strong> cerrar ambos ojos brevemente. Indica que tenés cartas bajas para el Truco</li>
+            </ul>
+        </div>
+
+        <!-- DESARROLLO DEL JUEGO -->
+        <div class="section-card">
+            <h2>Desarrollo del Juego</h2>
+            <h3>Elección del repartidor</h3>
+            <p>Cada jugador saca una carta del mazo boca abajo. Quien obtiene la carta de mayor valor será el repartidor de la primera ronda.</p>
+            <h3>Mezclar, cortar y repartir</h3>
+            <p>El repartidor mezcla el mazo y lo ofrece al jugador de su izquierda para que realice el corte. Reparte <strong>3 cartas</strong> a cada jugador, de a una por vez y en sentido antihorario.</p>
+            <p>Al finalizar, deja el mazo a su derecha (el siguiente repartidor será el jugador de su derecha).</p>
+            <p><strong>Carta dada vuelta:</strong> si durante el reparto se da vuelta una carta, hay reglas especiales según el equipo al que pertenece.</p>
+            <h3>Mano y pie</h3>
+            <ul>
+                <li><strong>Mano:</strong> el jugador a la derecha del repartidor (comienza la ronda)</li>
+                <li><strong>Pie:</strong> el repartidor (último en jugar)</li>
+                <li><strong>Orden de juego:</strong> sentido horario (hacia la izquierda)</li>
+            </ul>
+            <h3>Inicio de la ronda</h3>
+            <p>Antes de jugar la primera carta, se pueden realizar cantos de <strong>Envido</strong> y sus variantes (Real Envido, Falta Envido). En equipos, suele cantar el jugador "pie" de cada equipo.</p>
+            <h3>Jugar las cartas (bazas)</h3>
+            <p>La ronda se juega al mejor de <strong>3 bazas</strong>. Cada jugador tira una carta por baza, siguiendo el orden horario. El que ganó la baza pone la primera carta en la siguiente baza.</p>
+            <p><strong>Ganador de la ronda:</strong> quien gane 2 de las 3 bazas. Si un equipo gana las primeras dos bazas, no se juega la tercera.</p>
+            <h3>Parda (empate)</h3>
+            <ul>
+                <li>Si la primera baza empata, la ronda se define en la segunda</li>
+                <li>Si la primera y segunda empatan, se define en la tercera</li>
+                <li>Si las tres empatan, gana el jugador/equipo que es <strong>mano</strong></li>
+                <li>Si solo la tercera empata, gana quien ganó la <strong>primera baza</strong></li>
+            </ul>
+            <h3>Punto por ronda</h3>
+            <p>Si no se canta ni Envido ni Truco, el ganador suma <strong>1 punto</strong> automáticamente.</p>
+        </div>
+
+        <!-- ENVIDO -->
+        <div class="section-card">
+            <h2>Envido, Real Envido y Falta Envido</h2>
+            <p>El <strong>Envido</strong> permite sumar puntos adicionales según las cartas del mismo palo que tengas.</p>
+            <h3>Cómo se cuenta el Envido</h3>
+            <p>Se suman las dos cartas de mayor valor del mismo palo + 20 puntos. <strong>Figuras (10, 11, 12) valen 0 puntos</strong> para el Envido.</p>
+            <div class="highlight">
+                <p><strong>Ejemplos:</strong></p>
+                <p>7 y 6 de Oros = 7 + 6 + 20 = <strong>33 puntos</strong></p>
+                <p>5 y 4 de Copas = 5 + 4 + 20 = <strong>29 puntos</strong></p>
+                <p>Rey y 7 de Espadas = 0 + 7 + 20 = <strong>27 puntos</strong></p>
+            </div>
+            <p>Si no tenés dos cartas del mismo palo, tu Envido es el valor de tu carta más alta (sin sumar 20).</p>
+            <h3>Cantos de Envido</h3>
+            <ul>
+                <li><strong>Envido:</strong> No quiero = 1 punto / Quiero = 2 puntos</li>
+                <li><strong>Envido + Envido:</strong> No quiero = 2 puntos / Quiero = 4 puntos</li>
+                <li><strong>Envido + Real Envido:</strong> No quiero = 2 puntos / Quiero = 5 puntos</li>
+                <li><strong>Real Envido:</strong> No quiero = 1 punto / Quiero = 3 puntos</li>
+                <li><strong>Falta Envido:</strong> No quiero = puntos del último canto aceptado / Quiero = lo que falta para ganar</li>
+            </ul>
+            <h3>Cuándo se canta</h3>
+            <p>Solo <strong>antes</strong> de jugar la primera carta de la ronda. Una vez jugada la primera carta, no se puede cantar Envido.</p>
+            <h3>Orden de los cantos</h3>
+            <p>Envido → Envido → Real Envido → Falta Envido. No se puede volver atrás en la escala.</p>
+        </div>
+
+        <!-- TRUCO -->
+        <div class="section-card">
+            <h2>Truco, Retruco y Vale Cuatro</h2>
+            <p>El <strong>Truco</strong> permite aumentar los puntos en juego durante la disputa de las bazas.</p>
+            <h3>Cantos de Truco</h3>
+            <ul>
+                <li><strong>Truco:</strong> No quiero = 1 punto / Quiero = 2 puntos</li>
+                <li><strong>Retruco:</strong> No quiero = 2 puntos / Quiero = 3 puntos</li>
+                <li><strong>Vale Cuatro:</strong> No quiero = 3 puntos / Quiero = 4 puntos</li>
+            </ul>
+            <h3>Cuándo se canta</h3>
+            <p>En <strong>cualquier momento</strong> durante la ronda, incluso después de haber jugado cartas.</p>
+            <h3>Orden de los cantos</h3>
+            <p>Truco → Retruco → Vale Cuatro.</p>
+            <h3>Reglas importantes</h3>
+            <ul>
+                <li><strong>Ir al mazo:</strong> si decís "no quiero" al Truco, tu equipo entrega la ronda y el rival suma los puntos correspondientes</li>
+                <li><strong>Quiero:</strong> acepta la apuesta y se juega por los puntos en juego</li>
+                <li><strong>Cantar es pagar:</strong> si cantás Truco y el rival no acepta, ya no podés cantar Envido en esa ronda</li>
+            </ul>
+        </div>
+
+        <!-- VARIANTES -->
+        <div class="section-card">
+            <h2>Reglas de Barrio (Variantes)</h2>
+            <p>Estas variantes se adoptan como "Reglas de la Casa" en diferentes regiones. Se recomienda acordarlas antes de comenzar.</p>
+            <h3>Punta y Hacha (Pica-Pica)</h3>
+            <p>Solo en partidas de 3 vs 3 a 30 puntos. Se alterna entre rondas normales (3 vs 3) y rondas de enfrentamientos individuales (1 vs 1).</p>
+            <p><strong>Cuándo se juega:</strong> cuando un equipo llega a 6 puntos de las "malas".</p>
+            <p><strong>Mecánica:</strong> cada jugador juega mano a mano contra el jugador del equipo contrario que tiene enfrente. Se suman todos los puntos ganados.</p>
+            <h3>La Paraguaya</h3>
+            <p>Regla-broma tradicional de bar. Si un jugador recibe las tres cartas más bajas (4, 5 y 6 de distintos palos) y no puede sumar puntos para el Envido, grita "¡Paraguaya!" y solicita repartir nuevamente sus cartas.</p>
+            <h3>Flor</h3>
+            <p>Consiste en tener las tres cartas del mismo palo. Debe acordarse antes de iniciar la partida.</p>
+            <ul>
+                <li><strong>Cuándo se canta:</strong> antes de jugar la primera carta y antes del Envido</li>
+                <li><strong>Relación con Envido:</strong> si se canta Flor, se anulan todos los cantos de Envido</li>
+                <li><strong>Cómo se cuenta:</strong> suma de las tres cartas del mismo palo + 20 puntos. Las figuras (10, 11, 12) valen 0</li>
+            </ul>
+            <div class="highlight">
+                <p><strong>Ejemplo:</strong> 7, 6 y 5 del mismo palo = 18 + 20 = 38 puntos (máximo posible)</p>
+            </div>
+            <h3>Puntos según cantos de Flor</h3>
+            <ul>
+                <li><strong>Flor simple</strong> (rival no tiene Flor): 3 puntos</li>
+                <li><strong>Flor vs Flor:</strong> gana el mayor puntaje (empate = gana mano)</li>
+                <li><strong>Flor:</strong> No quiero = 1 punto / Quiero = 3 puntos</li>
+                <li><strong>Flor + Contraflor:</strong> No quiero = 3 puntos / Quiero = 6 puntos</li>
+                <li><strong>Flor + Contraflor al Resto:</strong> No quiero = 6 puntos / Quiero = puntos faltantes</li>
+            </ul>
+            <p><strong>Respuestas posibles:</strong> "Con flor quiero" (acepta) / "Con flor me achico" (cede sin disputar).</p>
+            <p class="text-muted">En la mayoría de las mesas, la Flor no se puede mentir. En torneos ASART generalmente se juega sin Flor.</p>
+        </div>
+
+        <!-- GLOSARIO -->
+        <div class="section-card">
+            <h2>Glosario del Truco</h2>
+            <ul>
+                <li><strong>Mano:</strong> primer jugador en jugar (a la derecha del repartidor)</li>
+                <li><strong>Pie:</strong> último jugador en jugar (el repartidor)</li>
+                <li><strong>Baza:</strong> turno completo donde todos juegan una carta</li>
+                <li><strong>Parda:</strong> empate en una baza</li>
+                <li><strong>Ir al mazo:</strong> abandonar la ronda (no aceptar un canto)</li>
+                <li><strong>Carta brava:</strong> carta de jerarquía alta, capaz de ganar una baza por sí sola</li>
+                <li><strong>Carta chica:</strong> carta de bajo valor</li>
+                <li><strong>Me ganaste de mano:</strong> expresión cuando se pierde por empate y ventaja del jugador mano</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>Timbax® - Todos los derechos reservados</p>
+            <p>© 2026 Tiago Salto Arce</p>
+        </footer>
+
+    </div>
+</body>
+</html>
