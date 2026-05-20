@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reglas de la Generala - Timbax</title>
+    <link rel="stylesheet" href="/assets/css/timbax.css">
+    <style>
+        .header-tag {
+            display: inline-block;
+            background: #F2F2F7;
+            color: #8E8E93;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 6px;
+            margin-bottom: 12px;
+        }
+
+        .section-card {
+            border: 1px solid #E5E5EA;
+            border-radius: 10px;
+            padding: 24px;
+            margin-bottom: 16px;
+        }
+
+        .section-card h2 {
+            margin-top: 0;
+            margin-bottom: 16px;
+            font-size: 18px;
+        }
+
+        .section-card h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .section-card p:last-child,
+        .section-card ul:last-child {
+            margin-bottom: 0;
+        }
+
+        .highlight {
+            background: #F2F2F7;
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin-bottom: 16px;
+        }
+        .highlight p { margin-bottom: 8px; }
+        .highlight p:last-child { margin-bottom: 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <a href="/reglas" class="back-link">
+            <svg class="back-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15 18l-6-6 6-6"/>
+            </svg>
+            Reglas
+        </a>
+
+        <header>
+            <div class="logo-container">
+                <img src="/timbax_logo.png" alt="Timbax Logo" class="logo-image">
+                <div class="logo">TIMBAX</div>
+            </div>
+            <div class="header-tag">Reglamentos</div>
+            <h1>Reglas de la Generala</h1>
+            <ul class="text-muted" style="list-style: none; padding-left: 0; margin-top: 8px;">
+                <li>· 2 a 7 jugadores (ideal 4)</li>
+                <li>· 5 dados tradicionales de 6 caras</li>
+                <li>· Partida de 11 categorías de puntos</li>
+            </ul>
+        </header>
+
+        <!-- INTRODUCCIÓN Y ORIGEN -->
+        <div class="section-card">
+            <h2>Introducción y Origen</h2>
+            <p>La Generala es un juego de dados donde el azar se combina con la estrategia. Cada decisión cuenta: elegir qué "tachar" es tan importante como qué anotar.</p>
+            <h3>Origen</h3>
+            <p>La Generala tiene raíces en el juego alemán <strong>Kniffel</strong> y el inglés <strong>Yacht</strong>.</p>
+            <p><strong>El Yacht (Yahtzee):</strong> popularizado en 1954 por una pareja que lo jugaba en su yate. Vendieron los derechos a Edwin Lowe (el mismo que masificó el Bingo).</p>
+            <p><strong>La Generala:</strong> versión latinoamericana que hereda el nombre del rango militar (General). El juego pasó de los yates a las tabernas, democratizándose en todos los estratos sociales.</p>
+        </div>
+
+        <!-- CONTEXTO Y OBJETIVO -->
+        <div class="section-card">
+            <h2>Contexto y Objetivo</h2>
+            <ul>
+                <li><strong>Jugadores:</strong> 2 a 7 personas (individual)</li>
+                <li><strong>Materiales:</strong> 5 dados tradicionales de seis caras</li>
+                <li><strong>Objetivo:</strong> lograr el mayor puntaje posible completando las <strong>11 categorías</strong> de puntos</li>
+                <li><strong>Victoria especial:</strong> hacer <strong>Generala Servida</strong> (5 dados iguales en el primer tiro) gana la partida automáticamente</li>
+            </ul>
+        </div>
+
+        <!-- VALORES DE LAS JUGADAS -->
+        <div class="section-card">
+            <h2>Valores de las Jugadas</h2>
+            <h3>Categoría de Números (del 1 al 6)</h3>
+            <p>Multiplicar la cantidad de dados iguales por su valor.</p>
+            <div class="highlight">
+                <p><strong>Ejemplos:</strong></p>
+                <p>6-6-6-3-4 → tres 6 = <strong>18 puntos</strong> en la categoría del 6</p>
+                <p>3-3-3-1-2 → tres 3 = <strong>9 puntos</strong> en la categoría del 3</p>
+            </div>
+            <h3>Escalera</h3>
+            <p><strong>Armada:</strong> 20 puntos / <strong>Servida:</strong> 25 puntos</p>
+            <p>Formar una escalera del 1 al 5 o del 2 al 6.</p>
+            <div class="highlight">
+                <p><strong>Válidas:</strong> 1-2-3-4-5 o 2-3-4-5-6</p>
+                <p><strong>No válidas:</strong> 3-4-5-6-1 ni 6-1-2-3-4</p>
+            </div>
+            <h3>Full</h3>
+            <p><strong>Armado:</strong> 30 puntos / <strong>Servido:</strong> 35 puntos</p>
+            <p>3 dados iguales + 2 dados iguales.</p>
+            <div class="highlight">
+                <p><strong>Ejemplos:</strong> 3-3-4-4-4 / 6-6-3-3-3 / 1-1-1-2-2</p>
+            </div>
+            <h3>Póker</h3>
+            <p><strong>Armado:</strong> 40 puntos / <strong>Servido:</strong> 45 puntos</p>
+            <p>4 dados iguales.</p>
+            <div class="highlight">
+                <p><strong>Ejemplos:</strong> 2-2-2-2-1 / 6-6-6-6-5 / 1-1-1-1-3</p>
+            </div>
+            <h3>Generala</h3>
+            <p><strong>Armada:</strong> 50 puntos / <strong>Servida:</strong> gana la partida</p>
+            <p>5 dados iguales en el 2do o 3er tiro.</p>
+            <h3>Doble Generala</h3>
+            <p><strong>Armada:</strong> 100 puntos / <strong>Servida:</strong> gana la partida</p>
+            <p>5 dados iguales en el 2do o 3er tiro (por 2da vez). Solo vale si ya lograste hacer Generala. Si todavía no la conseguiste, podés tachar la Doble Generala para evitar anotar un puntaje desfavorable.</p>
+            <h3>Generala Servida</h3>
+            <p>Sacar 5 dados iguales en el <strong>primer tiro</strong> gana la partida automáticamente. El juego termina al finalizar la ronda (todos los jugadores deben jugar su turno). La victoria se puede conseguir en cualquier momento, incluso con Generala y Doble Generala tachadas.</p>
+        </div>
+
+        <!-- DESARROLLO DEL JUEGO -->
+        <div class="section-card">
+            <h2>Desarrollo del Juego</h2>
+            <h3>Inicio de la partida</h3>
+            <p>Cada jugador tira un dado. El que obtiene el número más alto comienza el juego. El turno avanza en sentido <strong>antihorario</strong> (hacia el jugador de la derecha).</p>
+            <h3>Desarrollo del turno</h3>
+            <p>El jugador cuenta con hasta <strong>3 tiros</strong> por turno. Lanza los 5 dados e intenta armar la mejor jugada posible.</p>
+            <ul>
+                <li><strong>Validez del tiro:</strong> los 5 dados deben quedar sobre la mesa con su cara superior visible. Si alguno cae al suelo o queda inclinado, se vuelve a tirar solo ese dado</li>
+                <li><strong>Entre tiros:</strong> puede apartar los dados que desee conservar y volver a tirar los restantes</li>
+                <li><strong>Plantarse:</strong> si obtiene una jugada favorable en el 1er o 2do tiro, puede plantarse y no usar los tiros restantes</li>
+            </ul>
+            <h3>Tabla de puntuación</h3>
+            <p>Dividida en dos secciones con <strong>11 categorías</strong> en total. Cada una solo puede completarse una vez por partida.</p>
+            <ul>
+                <li><strong>Números</strong> (parte superior): categorías del 1 al 6</li>
+                <li><strong>Figuras</strong> (parte inferior): Escalera, Full, Póker, Generala, Doble Generala</li>
+            </ul>
+            <h3>Cómo se puntúa</h3>
+            <ul>
+                <li><strong>Si lográs una figura:</strong> podés anotar los puntos de esa figura, o usar esos dados para puntuar en una categoría de Números que tengas libre</li>
+                <li><strong>Si no lográs una figura:</strong> multiplicá los dados con el mismo valor y anotá en la categoría correspondiente</li>
+                <li><strong>Si ninguna jugada es útil:</strong> debés <strong>tachar</strong> una casilla vacía (marcarla con una cruz), perdiendo la posibilidad de puntuar en ella</li>
+            </ul>
+            <div class="highlight">
+                <p><strong>Estrategia:</strong> a veces es mejor tachar la Doble Generala que anotar 4 puntos en una categoría baja.</p>
+            </div>
+            <h3>Fin de la partida</h3>
+            <p>La partida termina cuando todos los jugadores completan las 11 categorías. <strong>Gana</strong> quien haya acumulado la mayor cantidad de puntos, o el que haya hecho Generala Servida.</p>
+        </div>
+
+        <footer>
+            <p>Timbax® - Todos los derechos reservados</p>
+            <p>© 2026 Tiago Salto Arce</p>
+        </footer>
+
+    </div>
+</body>
+</html>
