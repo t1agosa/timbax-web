@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reglas de la Mosca - Timbax</title>
+    <link rel="stylesheet" href="/assets/css/timbax.css">
+    <style>
+        .header-tag {
+            display: inline-block;
+            background: #F2F2F7;
+            color: #8E8E93;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 6px;
+            margin-bottom: 12px;
+        }
+
+        .section-card {
+            border: 1px solid #E5E5EA;
+            border-radius: 10px;
+            padding: 24px;
+            margin-bottom: 16px;
+        }
+
+        .section-card h2 {
+            margin-top: 0;
+            margin-bottom: 16px;
+            font-size: 18px;
+        }
+
+        .section-card h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .section-card p:last-child,
+        .section-card ul:last-child {
+            margin-bottom: 0;
+        }
+
+        .highlight {
+            background: #F2F2F7;
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin-bottom: 16px;
+        }
+        .highlight p { margin-bottom: 8px; }
+        .highlight p:last-child { margin-bottom: 0; }
+
+        .back-to-rules {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 13px;
+            color: #8E8E93;
+            text-decoration: none;
+            margin-bottom: 8px;
+            transition: opacity 0.2s ease;
+        }
+        .back-to-rules:hover { opacity: 0.7; }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <a href="/reglas" class="back-to-rules">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15 18l-6-6 6-6"/>
+            </svg>
+            Reglamentos
+        </a>
+
+        <a href="/" class="back-link">
+            <svg class="back-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15 18l-6-6 6-6"/>
+            </svg>
+            Volver a Timbax
+        </a>
+
+        <header>
+            <div class="logo-container">
+                <img src="/timbax_logo.png" alt="Timbax Logo" class="logo-image">
+                <div class="logo">TIMBAX</div>
+            </div>
+            <div class="header-tag">Reglamentos</div>
+            <h1>Reglas de la Mosca</h1>
+            <ul class="text-muted" style="list-style: none; padding-left: 0; margin-top: 8px;">
+                <li>· 2, 3, 4 o 5 jugadores (ideal 5)</li>
+                <li>· Baraja española: 40 cartas</li>
+                <li>· Partida desde 10, 15 o 20 puntos</li>
+            </ul>
+        </header>
+
+        <!-- INTRODUCCIÓN Y ORIGEN -->
+        <div class="section-card">
+            <h2>Introducción y Origen</h2>
+            <h3>Origen francés</h3>
+            <p>"La Mosca" proviene del juego francés "mouche" (mosca en francés). Se practicaba en Francia desde el siglo XVII como juego de bazas con triunfo. Fue registrado en la Academia de Juegos de Francia en 1718.</p>
+            <h3>Evolución</h3>
+            <p>Originalmente se jugaba con baraja francesa de 32 cartas. Evolucionó y dio lugar a variantes en distintas culturas. La mecánica fundamental incluye: repartición de cartas, determinación de un palo de triunfo, y jugada de bazas en sucesión.</p>
+            <h3>Reglas originales de "Mouche"</h3>
+            <p>Todos los jugadores ponen una moneda al pozo común antes del reparto. Si un jugador recibe 5 cartas del mismo palo inicial, tiene "la mouche" y gana inmediatamente el bote sin jugar bazas.</p>
+            <p>Si nadie tiene la mouche, se juega una serie de cinco bazas. Cada baza ganada otorga una quinta parte del pozo. Quien gana todas las bazas se lleva todo el pozo.</p>
+            <p>Si un jugador no gana ninguna baza, debe reponer el pozo de su propio bolsillo, que será distribuido en la siguiente ronda.</p>
+            <h3>Adaptación argentina</h3>
+            <p>En Argentina se adaptó "La Mosca" a un sistema de puntaje y castigo, sin apuestas obligatorias (aunque algunas variantes locales incluyen modalidad de apuestas).</p>
+        </div>
+
+        <!-- VALORES DE LAS CARTAS -->
+        <div class="section-card">
+            <h2>Valores de las Cartas</h2>
+            <p>Jerarquía de las cartas, de mayor a menor:</p>
+            <ul>
+                <li><strong>1</strong> — de cualquier palo</li>
+                <li><strong>3</strong> — de cualquier palo</li>
+                <li><strong>12</strong> — "El Rey" de cualquier palo</li>
+                <li><strong>11</strong> — "El Caballo" de cualquier palo</li>
+                <li><strong>10</strong> — "La Sota" de cualquier palo</li>
+                <li><strong>7</strong> — de cualquier palo</li>
+                <li><strong>6</strong> — de cualquier palo</li>
+                <li><strong>5</strong> — de cualquier palo</li>
+                <li><strong>4</strong> — de cualquier palo</li>
+                <li><strong>2</strong> — de cualquier palo</li>
+            </ul>
+            <h3>El Triunfo</h3>
+            <p>La última carta repartida (5ta carta del repartidor) determina el palo del <strong>"Triunfo"</strong>. Este palo manda en la ronda y "mata" a todos los demás.</p>
+            <p><strong>Regla clave:</strong> la carta más baja del triunfo (el 2) siempre gana a la carta más alta de cualquier otro palo. Dentro del mismo palo de triunfo, se respeta la jerarquía normal.</p>
+            <h3>Palo de Salida</h3>
+            <p>El palo de la primera carta que se juega en una baza. Este palo manda <strong>solo en esa baza</strong>. El único que lo mata es el palo del triunfo.</p>
+            <h3>Jerarquía por palos</h3>
+            <ul>
+                <li><strong>Palo del triunfo:</strong> manda en toda la ronda y mata a todos, respetando jerarquía de cartas</li>
+                <li><strong>Palo de salida:</strong> manda solo en esa baza y mata a los otros 2 palos que no son triunfo</li>
+                <li><strong>Otros palos:</strong> en cada baza, hay 2 palos que siempre pierden contra el triunfo y la salida</li>
+            </ul>
+            <p class="text-muted">En cada ronda hay 1 palo del triunfo, pero en cada baza puede haber palos de salida distintos.</p>
+        </div>
+
+        <!-- CÓMO SE JUEGA -->
+        <div class="section-card">
+            <h2>¿Cómo se juega?</h2>
+            <ul>
+                <li><strong>Baraja:</strong> española de 40 cartas (se retiran los 8, los 9 y los comodines)</li>
+                <li><strong>Jugadores:</strong> de 3 a 5 personas (modalidad individual)</li>
+                <li><strong>Rondas:</strong> se juega por rondas que constan de 5 bazas</li>
+                <li><strong>Baza:</strong> turno completo donde cada jugador juega una carta</li>
+                <li><strong>Objetivo:</strong> ganar bazas para llegar a 0 puntos, partiendo desde 15 puntos iniciales</li>
+            </ul>
+        </div>
+
+        <!-- DESARROLLO DEL JUEGO -->
+        <div class="section-card">
+            <h2>Desarrollo del Juego</h2>
+            <h3>Reparto y Triunfo</h3>
+            <p>El repartidor mezcla las cartas y ofrece el mazo al jugador de su izquierda para realizar el corte. Reparte <strong>5 cartas</strong> a cada jugador, de a una por vez y en sentido antihorario.</p>
+            <p>Cuando reparte su última carta (5ta de su mano), la da vuelta sobre la mesa para que todos la vean. Esa carta determina el palo del <strong>"Triunfo"</strong> de la ronda.</p>
+            <div class="highlight">
+                <p><strong>Si sale un "1" de triunfo:</strong> todos los jugadores están obligados a jugar la ronda.</p>
+            </div>
+            <h3>FASE 1: Decidir pasar o jugar</h3>
+            <p>Cada jugador (en sentido antihorario, comenzando por el jugador mano) debe declarar:</p>
+            <ul>
+                <li><strong>"Juego"</strong> — participa de la ronda por las bazas</li>
+                <li><strong>"Paso"</strong> — se retira de la ronda y entrega sus cartas al repartidor</li>
+            </ul>
+            <p><strong>Obligaciones:</strong> el repartidor siempre está obligado a jugar. El jugador pie (izquierda del repartidor) está obligado a jugar si todos los demás pasan.</p>
+            <h3>FASE 2: Cambio de cartas</h3>
+            <p>Cada jugador que dijo "juego" puede cambiar hasta <strong>3 cartas</strong> de su mano inicial. El repartidor puede cambiar hasta <strong>4 cartas</strong>, si el mazo lo permite.</p>
+            <p>El repartidor pregunta a cada jugador cuántas cartas quiere cambiar (de 0 a 3) y reparte en sentido antihorario. Al terminar, deja el mazo a su derecha.</p>
+            <div class="highlight">
+                <p><strong>Restricción física del mazo:</strong> si juegan 5 jugadores y todos piden cambiar 3 cartas, el repartidor no puede pedir 4 porque no alcanzan. Cálculo: 25 cartas iniciales (5×5) + 15 de cambio (3×5) = 40 cartas.</p>
+            </div>
+            <h3>Inicio de la ronda</h3>
+            <p>Comienza la primera baza el jugador <strong>mano</strong> (a la derecha del repartidor). El juego avanza en sentido <strong>antihorario</strong> (hacia la derecha). Cada ronda tiene <strong>5 bazas</strong>. El que gana una baza es mano en la siguiente.</p>
+            <p><strong>Ganador de cada baza:</strong> la carta más alta del palo del Triunfo. Si no hubo triunfo, gana la carta más alta del palo de salida.</p>
+        </div>
+
+        <!-- REGLAS DE LAS BAZAS -->
+        <div class="section-card">
+            <h2>Reglas de las Bazas</h2>
+            <h3>Salida con palo del Triunfo</h3>
+            <p>Si la baza <strong>inicia con una carta del triunfo</strong>, todos los jugadores están obligados a:</p>
+            <ul>
+                <li>Jugar una carta del <strong>triunfo que "mate"</strong> a la carta inicial</li>
+                <li>Si no pueden matar, jugar una carta del palo del <strong>triunfo</strong></li>
+                <li>Si no tienen triunfo, pueden jugar cualquier carta de otros palos</li>
+            </ul>
+            <h3>Salida con otro palo (palo de salida)</h3>
+            <p>Si la baza inicia con un palo que no es el triunfo, ese palo se denomina <strong>palo de salida</strong>.</p>
+            <p>Jerarquía: Triunfo > Palo de salida > Otros palos.</p>
+            <p>Si la baza <strong>inicia con una carta del palo de salida</strong>, todos están obligados a:</p>
+            <ul>
+                <li>Jugar una carta del <strong>palo de salida que "mate"</strong> a la carta inicial</li>
+                <li>Si no pueden matar, jugar una carta del <strong>palo de salida</strong></li>
+                <li>Si no tienen palo de salida, jugar una carta del palo del <strong>triunfo</strong> (cualquiera)</li>
+                <li>Si no tienen ni palo de salida ni triunfo, jugar cualquier carta</li>
+            </ul>
+            <p class="text-muted">El palo de salida solo manda en esa baza. En la siguiente, puede cambiar según la carta inicial.</p>
+        </div>
+
+        <!-- OBJETIVO Y PUNTAJE -->
+        <div class="section-card">
+            <h2>Objetivo y Puntaje</h2>
+            <ul>
+                <li><strong>Puntaje inicial:</strong> 15 puntos (variantes: 10 o 20 puntos)</li>
+                <li><strong>Por cada baza ganada:</strong> –1 punto</li>
+                <li><strong>Objetivo:</strong> llegar a 0 puntos o menos</li>
+            </ul>
+            <h3>Burrear</h3>
+            <p>Si un jugador decide jugar una ronda y <strong>no gana ninguna baza</strong>, se considera que "burreó". En lugar de restar, <strong>suma 5 puntos</strong>, alejándose del objetivo.</p>
+            <div class="highlight">
+                <p><strong>"BURRIIITOOO!"</strong> es lo que le dicen los demás jugadores al que burreó.</p>
+            </div>
+        </div>
+
+        <!-- PASAR CERCA DEL FINAL -->
+        <div class="section-card">
+            <h2>"Pasar" cerca del Final</h2>
+            <ul>
+                <li><strong>Si un jugador tiene 3, 2 o 1 puntos:</strong> cada vez que elige pasar una ronda, suma <strong>1 punto</strong></li>
+                <li><strong>Si tiene 4 puntos o más:</strong> puede pasar sin penalización</li>
+            </ul>
+        </div>
+
+        <!-- PICHINANGA -->
+        <div class="section-card">
+            <h2>"Pichinanga"</h2>
+            <p>Si un jugador recibe (en fase 1 o fase 2) las <strong>5 cartas más altas del palo de triunfo</strong> (1, 3, 12, 11 y 10), se considera que hizo <strong>"Pichinanga"</strong>.</p>
+            <p><strong>Efecto:</strong> gana la partida automáticamente, sin importar el puntaje y sin jugar la ronda.</p>
+        </div>
+
+        <!-- FIN DE LA PARTIDA -->
+        <div class="section-card">
+            <h2>Fin de la Partida</h2>
+            <p>Gana el primer jugador que llega a <strong>0 puntos o menos</strong> al finalizar una ronda. También gana quien hace <strong>"Pichinanga"</strong>.</p>
+        </div>
+
+        <!-- EMPATE Y DESEMPATE -->
+        <div class="section-card">
+            <h2>Empate y Desempate</h2>
+            <p>Si 2 o más jugadores llegan a 0 puntos o menos en la misma ronda, se produce un <strong>empate técnico</strong>.</p>
+            <h3>Desempate</h3>
+            <p>Se juegan rondas de desempate solo entre esos jugadores. Cada jugador reparte una vez (si empataron 2, se juegan 2 rondas; si empataron 3, se juegan 3).</p>
+            <p>Finalizadas las rondas de desempate, gana quien haya ganado <strong>más bazas totales</strong>.</p>
+        </div>
+
+        <!-- VARIANTES -->
+        <div class="section-card">
+            <h2>Reglas de Barrio (Variantes)</h2>
+            <h3>Puntaje de inicio</h3>
+            <p>Aunque la variante clásica inicia desde 15 puntos, algunas mesas prefieren:</p>
+            <ul>
+                <li><strong>10 puntos</strong> — partidas rápidas</li>
+                <li><strong>20 puntos</strong> — partidas largas</li>
+            </ul>
+            <h3>Apuestas (Mosca por dinero)</h3>
+            <p>Algunas mesas juegan por dinero real en lugar de puntaje descendente.</p>
+            <ul>
+                <li><strong>Formato:</strong> se juegan 10 rondas totales</li>
+                <li><strong>Pozo:</strong> cada jugador pone un valor fijo antes de repartir</li>
+                <li><strong>Reparto del pozo:</strong> cada jugador que gane una baza se lleva una quinta parte del pozo</li>
+            </ul>
+            <div class="highlight">
+                <p><strong>Ejemplo:</strong> si ganaste 3 bazas de un pozo de $5, te llevás $3.</p>
+            </div>
+            <h3>Penalización por burrear (con apuestas)</h3>
+            <p>Si un jugador burrea, debe reponer el pozo completo en la próxima ronda. La ronda siguiente se llama <strong>"Ronda Bonus"</strong> porque el pozo será el doble (o más si burrean varios).</p>
+            <h3>Fin de la partida con apuestas</h3>
+            <p>La partida termina cuando se completan las 10 rondas. <strong>Regla obligatoria:</strong> el que gane más dinero paga el postre. Mejor si es helado.</p>
+        </div>
+
+        <!-- GLOSARIO -->
+        <div class="section-card">
+            <h2>Glosario de La Mosca</h2>
+            <ul>
+                <li><strong>Baza:</strong> turno completo donde todos los jugadores juegan una carta</li>
+                <li><strong>Ronda:</strong> conjunto de 5 bazas</li>
+                <li><strong>Triunfo:</strong> palo dominante de la ronda (5ta carta del repartidor dada vuelta)</li>
+                <li><strong>Palo de salida:</strong> palo que manda en la baza cuando inicia con un palo que no es del triunfo</li>
+                <li><strong>Matar:</strong> tirar una carta superior obligatoriamente</li>
+                <li><strong>Burrear:</strong> jugar la ronda y no ganar ninguna baza (suma 5 puntos)</li>
+                <li><strong>"Juego":</strong> declarar que vas a jugar la ronda por las bazas</li>
+                <li><strong>"Paso":</strong> declarar que te retirás de la ronda en la fase 1</li>
+                <li><strong>Pichinanga:</strong> mano perfecta de triunfo (victoria directa)</li>
+                <li><strong>"BURRIIITOOO!":</strong> lo que le dicen al jugador que burreó</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>Timbax® - Todos los derechos reservados</p>
+            <p>© 2026 Tiago Salto Arce</p>
+        </footer>
+
+    </div>
+</body>
+</html>
