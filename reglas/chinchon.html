@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reglas del Chinchón - Timbax</title>
+    <link rel="stylesheet" href="/assets/css/timbax.css">
+    <style>
+        .header-tag {
+            display: inline-block;
+            background: #F2F2F7;
+            color: #8E8E93;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 6px;
+            margin-bottom: 12px;
+        }
+
+        .section-card {
+            border: 1px solid #E5E5EA;
+            border-radius: 10px;
+            padding: 24px;
+            margin-bottom: 16px;
+        }
+
+        .section-card h2 {
+            margin-top: 0;
+            margin-bottom: 16px;
+            font-size: 18px;
+        }
+
+        .section-card h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .section-card p:last-child,
+        .section-card ul:last-child {
+            margin-bottom: 0;
+        }
+
+        .highlight {
+            background: #F2F2F7;
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin-bottom: 16px;
+        }
+        .highlight p { margin-bottom: 8px; }
+        .highlight p:last-child { margin-bottom: 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <a href="/reglas" class="back-link">
+            <svg class="back-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15 18l-6-6 6-6"/>
+            </svg>
+            Reglas
+        </a>
+
+        <header>
+            <div class="logo-container">
+                <img src="/timbax_logo.png" alt="Timbax Logo" class="logo-image">
+                <div class="logo">TIMBAX</div>
+            </div>
+            <div class="header-tag">Reglamentos</div>
+            <h1>Reglas del Chinchón</h1>
+            <ul class="text-muted" style="list-style: none; padding-left: 0; margin-top: 8px;">
+                <li>· 2, 3 o 4 jugadores (ideal 3)</li>
+                <li>· Baraja española: 50 cartas</li>
+                <li>· Partida a 101 puntos</li>
+            </ul>
+        </header>
+
+        <!-- INTRODUCCIÓN Y ORIGEN -->
+        <div class="section-card">
+            <h2>Introducción y Origen</h2>
+            <p>El Chinchón es un juego de naipes de la familia rummy (juegos de "ligar" cartas formando escaleras y grupos) jugado con baraja española. Se caracteriza por una mano base de siete cartas por jugador y un sistema de eliminación por puntos.</p>
+            <h3>Origen del nombre</h3>
+            <p>Existen dos teorías sobre el origen del término "Chinchón":</p>
+            <ul>
+                <li><strong>Teoría del pueblo español:</strong> el nombre deriva de la localidad madrileña de Chinchón, un pueblo con fuerte tradición de juegos de naipes</li>
+                <li><strong>Teoría del Gin Rummy:</strong> el nombre sería una adaptación fonética del inglés "Gin", del juego Gin Rummy, adaptado a la baraja española</li>
+            </ul>
+            <h3>En Argentina</h3>
+            <p>El Chinchón llegó a Argentina con la inmigración española entre 1880 y 1914. Se consolidó en clubes sociales, centros de jubilados y reuniones familiares, convirtiéndose en uno de los juegos de naipes más populares del país.</p>
+            <p>En muchas regiones de Argentina y Uruguay se conoce como <strong>"Conga"</strong>, siendo prácticamente el mismo juego con variantes menores.</p>
+        </div>
+
+        <!-- OBJETIVO -->
+        <div class="section-card">
+            <h2>Objetivo del Juego</h2>
+            <ul>
+                <li><strong>Objetivo principal:</strong> ser el jugador que acumule <strong>menos puntos</strong> al finalizar la partida</li>
+                <li><strong>Límite de eliminación:</strong> 101 puntos (en algunas variantes 70 o 100 puntos)</li>
+                <li><strong>Victoria inmediata:</strong> lograr un <strong>Chinchón limpio</strong> (escalera de 7 cartas del mismo palo sin comodín) gana la partida automáticamente</li>
+            </ul>
+            <p>En cada mano, los jugadores buscan formar <strong>combinaciones válidas</strong> (escaleras y grupos) para minimizar los puntos de las cartas que quedan sueltas.</p>
+        </div>
+
+        <!-- BARAJA Y VALORES -->
+        <div class="section-card">
+            <h2>Baraja y Valores de las Cartas</h2>
+            <p>Baraja española de 50 cartas: del 1 (As) al 12 (Rey) de cada palo (Oros, Copas, Espadas, Bastos) + 2 comodines (jokers).</p>
+            <p class="text-muted">Variantes: también se juega con baraja de 40 cartas (sin 8 ni 9) o 48 cartas (con 8 y 9), con o sin comodines.</p>
+            <h3>Valores de puntuación</h3>
+            <ul>
+                <li><strong>Rey (12):</strong> 10 puntos</li>
+                <li><strong>Caballo (11):</strong> 10 puntos</li>
+                <li><strong>Sota (10):</strong> 10 puntos</li>
+                <li><strong>Del 2 al 9:</strong> valor nominal (2=2pts, 3=3pts, etc.)</li>
+                <li><strong>As (1):</strong> 1 punto</li>
+                <li><strong>Comodín:</strong> 20 puntos (si queda suelto en la mano)</li>
+            </ul>
+            <p class="text-muted">Las figuras (Sota, Caballo, Rey) valen 10 puntos independientemente de su número de índice.</p>
+        </div>
+
+        <!-- DESARROLLO DEL JUEGO -->
+        <div class="section-card">
+            <h2>Desarrollo del Juego</h2>
+            <h3>Elección del repartidor</h3>
+            <p>Cada jugador saca una carta del mazo. El que obtiene la carta más alta es el repartidor de la primera mano.</p>
+            <h3>Reparto</h3>
+            <p>El repartidor mezcla las cartas y ofrece el mazo al jugador de su izquierda para que realice el corte. Luego reparte <strong>7 cartas</strong> a cada jugador, de una en una y en sentido antihorario, comenzando por el jugador a su derecha (el "mano").</p>
+            <p>Coloca la siguiente carta <strong>boca arriba</strong> sobre la mesa, iniciando el <strong>pozo de descartes</strong>. El resto del mazo queda <strong>boca abajo</strong> formando el mazo de robo.</p>
+            <h3>Turno de juego</h3>
+            <p>El jugador "mano" comienza, y el juego avanza en sentido antihorario. En cada turno el jugador debe:</p>
+            <ul>
+                <li><strong>Robar una carta:</strong> del mazo de robo (boca abajo) o del pozo de descartes (boca arriba)</li>
+                <li><strong>Descartar una carta:</strong> arrojar una carta al pozo de descartes. Siempre debe quedar con 7 cartas en mano (excepto al cerrar)</li>
+            </ul>
+            <h3>Reposición del mazo</h3>
+            <p>Si el mazo de robo se agota, el repartidor toma el pozo de descartes (excepto la última carta), lo baraja y lo coloca boca abajo para continuar.</p>
+        </div>
+
+        <!-- COMBINACIONES -->
+        <div class="section-card">
+            <h2>Combinaciones Válidas (Juegos)</h2>
+            <p>Para "ligar" cartas, debes formar combinaciones válidas de <strong>mínimo 3 cartas</strong>.</p>
+            <h3>Escalera</h3>
+            <p>Secuencia de 3 o más cartas <strong>consecutivas del mismo palo</strong>.</p>
+            <div class="highlight">
+                <p><strong>Ejemplos:</strong> 3-4-5 de Oros · 10-11-12 de Espadas · 1-2-3 de Bastos</p>
+                <p><strong>Restricción:</strong> el As (1) solo puede ligar con 2 y 3. No se permite la secuencia Rey-As-Dos.</p>
+            </div>
+            <h3>Grupo o Trío</h3>
+            <p>Conjunto de 3 o 4 cartas <strong>del mismo valor</strong>, independientemente del palo.</p>
+            <div class="highlight">
+                <p><strong>Ejemplos:</strong> tres Sotas (10 de Oros, 10 de Copas, 10 de Espadas) · cuatro Sietes (7 de cada palo)</p>
+                <p><strong>Máximo:</strong> no se pueden agrupar más de 4 cartas del mismo valor.</p>
+            </div>
+            <h3>Chinchón</h3>
+            <p><strong>Escalera de 7 cartas consecutivas del mismo palo.</strong> Es la jugada máxima del juego. Si se logra <strong>sin comodín</strong> (Chinchón limpio), se gana la partida automáticamente.</p>
+            <h3>Uso de comodines</h3>
+            <p>Los comodines reemplazan cualquier carta faltante en una combinación. Solo se permite <strong>1 comodín por combinación</strong>. Si tenés 2 comodines, debés usarlos en combinaciones separadas.</p>
+        </div>
+
+        <!-- CORTE O CIERRE -->
+        <div class="section-card">
+            <h2>Corte o Cierre de Mano</h2>
+            <p>El <strong>corte</strong> es el momento en que un jugador decide finalizar la mano.</p>
+            <h3>Condición para cortar</h3>
+            <p>Podés cortar cuando tus <strong>cartas sueltas</strong> (las que no forman parte de ninguna combinación) <strong>suman 5 puntos o menos</strong>.</p>
+            <div class="highlight">
+                <p><strong>Ejemplo:</strong> tenés 3-4-5 de Oros (escalera) + 7-7-7 (trío) + As suelto (1 punto) → cartas sueltas = 1 punto → podés cortar.</p>
+            </div>
+            <h3>Cómo cortar</h3>
+            <p>Al finalizar tu turno, descartá una carta <strong>boca abajo</strong> sobre el pozo (para que nadie la vea). Esto indica que has cortado la mano.</p>
+            <h3>Tipos de cierre</h3>
+            <ul>
+                <li><strong>Cierre simple:</strong> 6 cartas ligadas + 1 carta suelta de 5 pts o menos. Sumás el valor de la carta suelta</li>
+                <li><strong>Cierre a -10 (limpio):</strong> las 7 cartas están completamente ligadas. <strong>Restás 10 puntos</strong> de tu total acumulado</li>
+                <li><strong>Chinchón con comodín:</strong> escalera de 7 cartas usando un comodín. Cierre a -10 puntos</li>
+                <li><strong>Chinchón limpio:</strong> escalera de 7 cartas del mismo palo sin comodín. <strong>Ganás la partida automáticamente</strong>. Los demás reciben 101 puntos</li>
+            </ul>
+            <h3>Penalización por cortar mal</h3>
+            <p>Si cortás con más de 5 puntos sueltos o con menos de 6 cartas ligadas, recibís una <strong>penalización de 50 puntos</strong>.</p>
+        </div>
+
+        <!-- ACOMODAR CARTAS -->
+        <div class="section-card">
+            <h2>Acomodar o "Colar" Cartas</h2>
+            <p>Una vez que un jugador ha cortado, se inicia la fase de <strong>mostrar y acomodar cartas</strong>.</p>
+            <h3>Procedimiento</h3>
+            <p>El jugador que cortó muestra sus combinaciones sobre la mesa. Los demás jugadores (en orden de juego) muestran sus cartas y pueden <strong>"acomodar" o "colar"</strong> sus cartas sueltas en las combinaciones del jugador que cortó.</p>
+            <h3>Reglas de acomodado</h3>
+            <p><strong>Podés acomodar:</strong> una carta que complete un trío (convertirlo en cuarteto) o una carta que extienda una escalera.</p>
+            <div class="highlight">
+                <p><strong>Ejemplo:</strong> el que cortó tiene 5-6-7 de Bastos. Vos tenés el 8 de Bastos suelto → podés colocarlo en su escalera.</p>
+            </div>
+            <p><strong>No podés acomodar</strong> en un cuarteto completo, si el jugador cortó a -10 puntos, o si el jugador hizo Chinchón.</p>
+            <p class="text-muted">Esta regla de acomodar cartas es una característica distintiva del Chinchón argentino.</p>
+        </div>
+
+        <!-- REENGANCHE -->
+        <div class="section-card">
+            <h2>Sistema de Reenganche</h2>
+            <p>El <strong>reenganche</strong> permite a un jugador eliminado volver a la partida.</p>
+            <h3>¿Cuándo te eliminás?</h3>
+            <p>Cuando tu puntaje acumulado supera los <strong>101 puntos</strong> (o el límite acordado).</p>
+            <h3>¿Cómo funciona?</h3>
+            <p>El jugador eliminado puede pedir reengancharse antes de que comience la siguiente mano. Si se reengancha, vuelve a jugar con el <strong>mismo puntaje que tiene el jugador con más puntos en ese momento</strong>.</p>
+            <div class="highlight">
+                <p><strong>Ejemplo:</strong> te eliminaste con 105 puntos. El jugador con más puntos en juego tiene 85. Si te reenganchás, volvés con 85 puntos.</p>
+            </div>
+            <h3>Limitaciones</h3>
+            <ul>
+                <li>Número máximo de reenganches por persona (según acuerdo de mesa)</li>
+                <li>No se permite reenganche cuando quedan solo 2 jugadores</li>
+                <li>En partidas con apuestas, el jugador que se reengancha suele pagar un 50% adicional</li>
+            </ul>
+            <p class="text-muted">El reenganche es una institución social argentina que prolonga la convivencia y el encuentro.</p>
+        </div>
+
+        <!-- FIN DE LA PARTIDA -->
+        <div class="section-card">
+            <h2>Fin de la Partida</h2>
+            <h3>Victoria por puntos</h3>
+            <p>La partida termina cuando <strong>solo queda un jugador con menos de 101 puntos</strong>. Ese jugador es el <strong>ganador</strong>.</p>
+            <h3>Victoria por Chinchón limpio</h3>
+            <p>Si un jugador logra <strong>Chinchón sin comodín</strong> (escalera de 7 cartas del mismo palo), gana la partida inmediatamente. Los demás jugadores reciben <strong>101 puntos</strong> automáticamente.</p>
+            <h3>Empate</h3>
+            <p>Si varios jugadores superan 101 puntos en la misma mano, gana quien tenga <strong>menos puntos</strong>. Si hay empate de puntos, gana <strong>quien cortó la última mano</strong>.</p>
+            <h3>Tanteo de cada mano</h3>
+            <p>Al finalizar cada mano, se cuentan los puntos de las <strong>cartas sueltas</strong> (no ligadas ni acomodadas) de cada jugador y se suman a su total acumulado. Excepción: cierre a -10 resta 10 puntos del total.</p>
+        </div>
+
+        <!-- VARIANTES -->
+        <div class="section-card">
+            <h2>Variantes Argentinas y Reglas de Barrio</h2>
+            <h3>La Conga</h3>
+            <p>En muchas regiones de Argentina (interior del país) y en Uruguay, el Chinchón se conoce como <strong>"Conga"</strong>. Diferencias típicas:</p>
+            <ul>
+                <li>Se juega con baraja de 40 cartas (sin 8 ni 9)</li>
+                <li>Sin comodines</li>
+                <li>Cierre al 3 (cartas sueltas ≤ 3 puntos) en lugar de al 5</li>
+                <li>Penalización más severa por no tener cartas ligadas</li>
+            </ul>
+            <h3>Diferentes barajas</h3>
+            <ul>
+                <li><strong>40 cartas:</strong> sin 8 ni 9, sin comodines (variante austera)</li>
+                <li><strong>48 cartas:</strong> con 8 y 9, sin comodines</li>
+                <li><strong>50 cartas:</strong> con 8 y 9, con 2 comodines (variante estándar en Buenos Aires)</li>
+            </ul>
+            <h3>Variaciones en el límite de puntos</h3>
+            <ul>
+                <li><strong>70 puntos:</strong> partidas más rápidas</li>
+                <li><strong>100 puntos:</strong> variante clásica</li>
+                <li><strong>101 puntos:</strong> estándar en torneos bonaerenses</li>
+            </ul>
+            <h3>Chinchón con apuestas</h3>
+            <p>En algunas mesas se juega con <strong>pozo</strong>: cada jugador aporta una cantidad antes de comenzar, el ganador se lleva el pozo, y los reenganchados pagan extra para volver.</p>
+            <h3>Reglas de conducta en torneos</h3>
+            <p>En competencias formales (Juegos Bonaerenses) se aplican:</p>
+            <ul>
+                <li>Prohibición de sugerir jugadas a otros</li>
+                <li>Mano libre al robar (no tocar otras cartas)</li>
+                <li>Sanciones por infracciones (30-50 puntos)</li>
+                <li>Verificación de cartas antes de levantar la mano</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>Timbax® - Todos los derechos reservados</p>
+            <p>© 2026 Tiago Salto Arce</p>
+        </footer>
+
+    </div>
+</body>
+</html>
