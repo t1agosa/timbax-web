@@ -16,8 +16,8 @@
 /* ── Body ── */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background: #F2F2F7;
-    color: #272727;
+    background: #000000;
+    color: #E8F5E9;
     line-height: 1.6;
     padding: 20px;
 }
@@ -26,10 +26,10 @@ body {
 .container {
     max-width: 800px;
     margin: 0 auto;
-    background: #FFFFFF;
+    background: #0A2818;
     padding: 40px;
     border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 /* ── Back link ── */
@@ -38,7 +38,7 @@ body {
     align-items: center;
     gap: 8px;
     margin-bottom: 24px;
-    color: #2979FF;
+    color: #FFBF00;
     text-decoration: none;
     font-weight: 600;
     font-size: 15px;
@@ -52,7 +52,7 @@ body {
 header {
     margin-bottom: 40px;
     padding-bottom: 24px;
-    border-bottom: 1px solid #E5E5EA;
+    border-bottom: 1px solid #3A6B4E;
 }
 
 .logo-container {
@@ -65,21 +65,21 @@ header {
 .logo {
     font-size: 32px;
     font-weight: 900;
-    color: #272727;
+    color: #E8F5E9;
 }
 
 /* ── Typography ── */
 h1 {
     font-size: 28px;
     font-weight: 700;
-    color: #272727;
+    color: #E8F5E9;
     margin-bottom: 8px;
 }
 
 h2 {
     font-size: 22px;
     font-weight: 700;
-    color: #272727;
+    color: #E8F5E9;
     margin-top: 32px;
     margin-bottom: 16px;
 }
@@ -87,7 +87,7 @@ h2 {
 h3 {
     font-size: 18px;
     font-weight: 600;
-    color: #272727;
+    color: #E8F5E9;
     margin-top: 24px;
     margin-bottom: 12px;
 }
@@ -95,7 +95,7 @@ h3 {
 p {
     margin-bottom: 16px;
     font-size: 16px;
-    color: #272727;
+    color: #E8F5E9;
 }
 
 ul {
@@ -106,17 +106,17 @@ ul {
 li {
     margin-bottom: 8px;
     font-size: 16px;
-    color: #272727;
+    color: #E8F5E9;
 }
 
 a {
-    color: #2979FF;
+    color: #FFBF00;
 }
 
 /* ── Divider ── */
 .divider {
     border: none;
-    border-top: 1px solid #E5E5EA;
+    border-top: 1px solid #3A6B4E;
     margin: 32px 0;
 }
 
@@ -125,8 +125,8 @@ footer {
     text-align: center;
     margin-top: 48px;
     padding-top: 24px;
-    border-top: 1px solid #E5E5EA;
-    color: #8E8E93;
+    border-top: 1px solid #3A6B4E;
+    color: #6BAA7F;
     font-size: 13px;
     line-height: 1.8;
 }
@@ -134,7 +134,7 @@ footer {
 /* ── Utility: muted text ── */
 .text-muted {
     font-size: 14px;
-    color: #8E8E93;
+    color: #6BAA7F;
 }
 
 /* ── Mobile ── */
