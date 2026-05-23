@@ -3,42 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- ══════════════════════════════════════════════════════════
-     truco/index.html  (timbax.com/reglas/truco)
-     ══════════════════════════════════════════════════════════ -->
-    <title>Reglas del Truco Argentino - Reglamento Completo | Timbax</title>
-    <meta name="description" content="Reglamento completo del Truco argentino: valores de las cartas, envido, falta envido, truco, retruco, vale cuatro, señas, flor y variantes de barrio. El reglamento más completo en español.">
-    <meta name="keywords" content="reglas truco argentino, como se juega el truco, envido, real envido, falta envido, truco, retruco, vale cuatro, señas truco, flor truco, truco 2 jugadores, truco 4 jugadores, truco 6 jugadores, puntaje truco">
-    <meta name="author" content="Tiago Salto Arce">
-    <link rel="canonical" href="https://timbax.com/reglas/truco">
-     
-    <meta property="og:title" content="Reglas del Truco Argentino - Reglamento Completo">
-    <meta property="og:description" content="Todo sobre el Truco argentino: cartas, envido, real envido, falta envido, truco, retruco, vale cuatro, señas y variantes. El reglamento más completo.">
-    <meta property="og:url" content="https://timbax.com/reglas/truco">
-    <meta property="og:type" content="article">
-    <meta property="og:locale" content="es_AR">
-
-    <!-- Schema.org estructurado para Google -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "Reglas del Truco Argentino - Reglamento Completo",
-      "description": "Reglamento completo del Truco argentino: valores de las cartas, envido, truco, retruco, vale cuatro, señas, flor y variantes de barrio.",
-      "author": { "@type": "Person", "name": "Tiago Salto Arce" },
-      "publisher": { "@type": "Organization", "name": "Timbax" },
-      "url": "https://timbax.com/reglas/truco",
-      "inLanguage": "es-AR"
-    }
-    </script>
-    
+    <title>Reglas del Truco - Timbax</title>
     <link rel="stylesheet" href="/assets/css/timbax.css">
     <style>
         .header-tag {
             display: inline-block;
-            background: #F2F2F7;
-            color: #8E8E93;
+            background: var(--surface);
+            color: var(--text-muted);
             font-size: 12px;
             font-weight: 600;
             letter-spacing: 0.08em;
@@ -46,10 +17,25 @@
             padding: 4px 10px;
             border-radius: 6px;
             margin-bottom: 12px;
-        }        
+        }
+
+        .game-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 22%;
+            overflow: hidden;
+            flex-shrink: 0;
+            margin-bottom: 16px;
+        }
+        .game-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
 
         .section-card {
-            border: 1px solid #E5E5EA;
+            border: 1px solid var(--border);
             border-radius: 10px;
             padding: 24px;
             margin-bottom: 16px;
@@ -73,38 +59,55 @@
         }
 
         .highlight {
-            background: #F2F2F7;
+            background: var(--surface);
             border-radius: 8px;
             padding: 16px 20px;
             margin-bottom: 16px;
         }
         .highlight p { margin-bottom: 8px; }
         .highlight p:last-child { margin-bottom: 0; }
-        
+
+        .back-to-rules {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 13px;
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-bottom: 8px;
+            transition: opacity 0.2s ease;
+        }
+        .back-to-rules:hover { opacity: 0.7; }
     </style>
 </head>
 <body>
     <div class="container">
 
-        <a href="/reglas" class="back-link">
+        <a href="/reglas" class="back-to-rules">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15 18l-6-6 6-6"/>
+            </svg>
+            Reglamentos
+        </a>
+
+        <a href="/" class="back-link">
             <svg class="back-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M15 18l-6-6 6-6"/>
             </svg>
-            Reglas
+            Volver a Timbax
         </a>
 
         <header>
             <div class="logo-container">
                 <img src="/timbax_logo.png" alt="Timbax Logo" class="logo-image">
                 <div class="logo">TIMBAX</div>
-            </div>            
+            </div>
+            <div class="game-icon">
+                <img src="/assets/images/truco.webp" alt="Truco">
+            </div>
             <div class="header-tag">Reglamentos</div>
             <h1>Reglas del Truco</h1>
-            <ul class="text-muted" style="list-style: none; padding-left: 0; margin-top: 8px;">
-                <li>· 2, 4 o 6 jugadores (ideal 2 vs 2)</li>
-                <li>· Baraja española: 36 o 40 cartas</li>
-                <li>· Partida a 15, 18 o 30 puntos</li>
-            </ul>
+            <p class="text-muted">2, 4 o 6 jugadores · Baraja española de 40 cartas</p>
         </header>
 
         <!-- INTRODUCCIÓN Y ORIGEN -->
