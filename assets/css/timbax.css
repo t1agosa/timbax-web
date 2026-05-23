@@ -140,7 +140,7 @@ footer {
     padding-top: 24px;
     border-top: 1px solid var(--border);
     color: var(--text-muted);
-    font-size: 13px;
+    font-size: 12px;
     line-height: 1.8;
 }
 
@@ -158,5 +158,6 @@ footer {
     h2 { font-size: 20px; }
     h3 { font-size: 16px; }
     p, li { font-size: 15px; }
-    footer { font-size: 11px; }
+    footer { font-size: 10px; }
+    footer p { font-size: 10px; }
 }
