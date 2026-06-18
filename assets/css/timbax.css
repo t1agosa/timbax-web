@@ -8,15 +8,15 @@
 
 /* ── Color Tokens ── */
 :root {
-    --bg:              #000000;
-    --container:       #002211;
-    --surface:         #13492C;
-    --surface-variant: #256B4A;
-    --border:          #3A6B4E;
-    --primary:         #FFBF00;
-    --primary-hover:   #E6AC00;
-    --text:            #E8F5E9;
-    --text-muted:      #6BAA7F;
+    --bg:              #131820;
+    --container:       #252D3E;
+    --surface:         #3B4C5F;
+    --surface-variant: #28323F;
+    --border:          #324157;
+    --primary:         #D92B00;
+    --primary-hover:   #C42900;
+    --text:            #EDF0F3;
+    --text-muted:      #B8C0CA;
 }
 
 /* ── Reset ── */
