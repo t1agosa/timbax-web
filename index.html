@@ -112,6 +112,18 @@
             box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
         }
 
+        .btn-disabled {
+            opacity: 0.4;
+            pointer-events: none;
+            filter: grayscale(25%);
+        }
+
+        .btn-disabled:hover {
+            transform: none;
+            box-shadow: none;
+            background: #ffffff;
+        }
+
         .btn-icon {
             width: 36px;
             height: 36px;
@@ -259,19 +271,19 @@
         <p class="games">TRUCO · MOSCA · CHINCHÓN · GENERALA</p>
         
        <div class="buttons">            
-            <a href="https://apps.apple.com/app/timbax/id0000000000" class="btn">
+            <a href="https://apps.apple.com/app/timbax/id0000000000" class="btn btn-disabled">
                 <!-- Apple AppStore logo logo oficial -->
                 <img src="/assets/icons/ic_appstore.svg" class="btn-icon" alt="App Store">
                 <div class="btn-text">
-                    <span class="btn-text-sub">Descargar aplicación para iOS</span>
+                    <span class="btn-text-sub">Próximamente disponible</span>
                     <span class="btn-text-main">App Store Apple</span>
                 </div>
             </a>
-           <a href="https://play.google.com/store/apps/details?id=com.timbax.app" class="btn">
+           <a href="https://play.google.com/store/apps/details?id=com.timbax.app" class="btn btn-disabled">
                 <!-- Google Play logo oficial -->
                 <img src="/assets/icons/ic_googleplay.svg" class="btn-icon" alt="Google Play">
                 <div class="btn-text">
-                    <span class="btn-text-sub">Descargar aplicación para Android</span>
+                    <span class="btn-text-sub">Próximamente disponible</span>
                     <span class="btn-text-main">Google Play Store</span>
                 </div>
             </a>
