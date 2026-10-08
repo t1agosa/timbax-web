@@ -1,22 +1,39 @@
 /* ============================================================
    TIMBAX — Base Stylesheet
    Compartido por todas las páginas del sitio
+   Theme "Asado Nocturno" — mismos tokens que la app (Color.kt / Type.kt / Shape.kt)
    ============================================================ */
 
-/* Google Fonts - Inter (400, 500, 600, 700, 800) */
+/* Google Fonts - Inter (400, 500, 600, 700, 800), los mismos pesos que la app */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 /* ── Color Tokens ── */
 :root {
-    --bg:              #131820;
-    --container:       #252D3E;
-    --surface:         #3B4C5F;
-    --surface-variant: #28323F;
-    --border:          #324157;
-    --primary:         #D92B00;
-    --primary-hover:   #C42900;
-    --text:            #EDF0F3;
-    --text-muted:      #B8C0CA;
+    /* Carbón nocturno: fondo → card → superficie hundida. Sin sombras: separan los bordes. */
+    --bg:               #12100E;
+    --container:        #1C1815;
+    --surface:          #241F1B;
+    --surface-variant:  #26201C;
+    --surface-sunken:   #151210;
+    --border:           #2F2823;
+    --outline:          #8A7C70;
+
+    /* Marca: naranja brasa (relleno) y brasa legible (texto/links sobre superficie) */
+    --primary:          #D92B00;
+    --primary-hover:    #C42900;
+    --on-primary:       #FFFFFF;
+    --primary-text:     #FF3300;
+    --accent-soft:      #3B1A10;
+    --on-accent-soft:   #FF8F66;
+    --amber:            #FFAA00;
+
+    --text:             #F4EEE7;
+    --text-muted:       #B5A99C;
+
+    /* Radios (Dimens.kt) */
+    --radius-small:     12px;
+    --radius-control:   14px;
+    --radius-card:      22px;
 }
 
 /* ── Reset ── */
@@ -31,8 +48,11 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background: var(--bg);
     color: var(--text);
+    font-weight: 400;
     line-height: 1.6;
     padding: 20px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 /* ── Container ── */
@@ -41,8 +61,8 @@ body {
     margin: 0 auto;
     background: var(--container);
     padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-card);
 }
 
 /* ── Back link ── */
@@ -51,7 +71,7 @@ body {
     align-items: center;
     gap: 8px;
     margin-bottom: 24px;
-    color: var(--primary);
+    color: var(--primary-text);
     text-decoration: none;
     font-weight: 600;
     font-size: 15px;
@@ -77,21 +97,26 @@ header {
 .logo-image { width: 40px; height: auto; }
 .logo {
     font-size: 32px;
-    font-weight: 900;
+    font-weight: 800;
+    letter-spacing: -0.035em;
     color: var(--text);
 }
 
 /* ── Typography ── */
 h1 {
-    font-size: 28px;
-    font-weight: 700;
+    font-size: 31px;
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.035em;
     color: var(--text);
     margin-bottom: 8px;
 }
 
 h2 {
     font-size: 22px;
-    font-weight: 700;
+    font-weight: 800;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
     color: var(--text);
     margin-top: 32px;
     margin-bottom: 16px;
@@ -99,7 +124,9 @@ h2 {
 
 h3 {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
     color: var(--text);
     margin-top: 24px;
     margin-bottom: 12px;
@@ -123,7 +150,11 @@ li {
 }
 
 a {
-    color: var(--primary);
+    color: var(--primary-text);
+}
+
+strong, b {
+    font-weight: 700;
 }
 
 /* ── Divider ── */
@@ -154,7 +185,7 @@ footer {
 @media (max-width: 768px) {
     .container { padding: 24px; }
     .logo-image { width: 32px; }
-    h1 { font-size: 24px; }
+    h1 { font-size: 26px; }
     h2 { font-size: 20px; }
     h3 { font-size: 16px; }
     p, li { font-size: 15px; }

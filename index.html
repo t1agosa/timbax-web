@@ -43,8 +43,8 @@
             width: 100%;
             background: var(--container);
             padding: 48px 40px;
-            border-radius: 16px;
-            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-card);
             text-align: center;
         }
 
@@ -57,7 +57,8 @@
         .logo {
             font-size: 56px;
             font-weight: 800;
-            letter-spacing: -1px;
+            line-height: 1.05;
+            letter-spacing: -0.04em;
             margin-bottom: 4px;
             color: var(--text);
         }
@@ -65,20 +66,22 @@
         .tagline {
             font-size: 22px;
             font-weight: 700;
+            letter-spacing: -0.02em;
             margin-bottom: 32px;
             color: var(--text);
         }
 
         .description {
             font-size: 17px;
-            font-weight: 500;
+            font-weight: 400;
             margin-bottom: 8px;
             color: var(--text-muted);
         }
 
         .games {
-            font-size: 15px;
-            font-weight: 700;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.08em;
             margin-bottom: 40px;
             color: var(--text-muted);
         }
@@ -100,16 +103,21 @@
             border-radius: 50px;
             transition: all 0.2s ease;
             cursor: pointer;
-            background: #ffffff;
-            color: #000000;
+            background: var(--text);
+            color: var(--bg);
             -webkit-tap-highlight-color: transparent;
             user-select: none;
         }
         
         .btn:hover {
-            background: #f0f0f0;
+            background: #ffffff;
             transform: translateY(-2px);
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 0 0 3px var(--accent-soft);
+        }
+
+        .btn:focus-visible {
+            outline: 2px solid var(--primary-text);
+            outline-offset: 3px;
         }
 
         .btn-disabled {
@@ -121,16 +129,7 @@
         .btn-disabled:hover {
             transform: none;
             box-shadow: none;
-            background: #ffffff;
-        }
-
-        .coming-soon-label {
-            font-size: 13px;
-            font-weight: 700;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            color: var(--primary);
-            margin-bottom: 16px;
+            background: var(--text);
         }
 
         .btn-icon {
@@ -148,16 +147,17 @@
 
         .btn-text-sub {
             font-size: 11px;
-            font-weight: 500;
+            font-weight: 600;
             line-height: 1.2;
-            color: #000000;
+            color: var(--bg);
         }
 
         .btn-text-main {
             font-size: 20px;
-            font-weight: 900;
+            font-weight: 800;
             line-height: 1.1;
-            color: #000000;
+            letter-spacing: -0.02em;
+            color: var(--bg);
         }
 
         .divider {
@@ -176,7 +176,7 @@
 
         .legal-link {
             font-size: 15px;
-            color: var(--primary);
+            color: var(--primary-text);
             text-decoration: none;
             font-weight: 600;
             transition: opacity 0.2s ease;
@@ -279,22 +279,21 @@
         <p class="description">El anotador oficial de todas tus partidas</p>
         <p class="games">TRUCO · MOSCA · CHINCHÓN · GENERALA</p>
         
-       <p class="coming-soon-label">Próximamente en las tiendas</p>
-       <div class="buttons">           
-            <a href="https://apps.apple.com/app/timbax/id0000000000" class="btn btn-disabled">
-                <!-- Apple AppStore logo logo oficial -->
-                <img src="/assets/icons/ic_appstore.svg" class="btn-icon" alt="App Store">
+        <div class="buttons">
+            <a href="https://play.google.com/store/apps/details?id=com.timbax.app" class="btn" target="_blank" rel="noopener">
+                <!-- Google Play logo oficial -->
+                <img src="/assets/icons/ic_googleplay.svg" class="btn-icon" alt="">
                 <div class="btn-text">
-                    <span class="btn-text-sub">Próximamente disponible</span>
-                    <span class="btn-text-main">App Store Apple</span>
+                    <span class="btn-text-sub">Disponible en</span>
+                    <span class="btn-text-main">Google Play</span>
                 </div>
             </a>
-           <a href="https://play.google.com/store/apps/details?id=com.timbax.app" class="btn btn-disabled">
-                <!-- Google Play logo oficial -->
-                <img src="/assets/icons/ic_googleplay.svg" class="btn-icon" alt="Google Play">
+            <a href="https://apps.apple.com/app/timbax/id0000000000" class="btn btn-disabled" aria-disabled="true" tabindex="-1">
+                <!-- Apple AppStore logo oficial -->
+                <img src="/assets/icons/ic_appstore.svg" class="btn-icon" alt="">
                 <div class="btn-text">
                     <span class="btn-text-sub">Próximamente disponible</span>
-                    <span class="btn-text-main">Google Play Store</span>
+                    <span class="btn-text-main">App Store</span>
                 </div>
             </a>
         </div>
